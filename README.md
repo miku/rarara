@@ -9,7 +9,6 @@ Prime [buffer cache](http://www.tldp.org/LDP/sag/html/buffer-cache.html) for a f
   other activity on the system did not in the meantime flush pages from
   the cache).
 
-
 Usage
 -----
 
@@ -35,17 +34,16 @@ Alternatives
     113123+1 records out
     7413691873 bytes (7.4 GB) copied, 43.7198 s, 170 MB/s
 
-    real	0m43.778s
-    user	0m0.028s
-    sys	  0m3.672s
+    real    0m43.778s
+    user    0m0.028s
+    sys     0m3.672s
 
     $ time rarara bigger.file
     readahead [0:7413691873]
 
-    real	0m23.753s
-    user	0m0.004s
-    sys	  0m0.464s
-
+    real    0m23.753s
+    user    0m0.004s
+    sys     0m0.464s
 
 See also
 --------
