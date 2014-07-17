@@ -20,7 +20,7 @@ Try to cache the whole file starting at the beginning by default.
 Alternatives
 ------------
 
-[dd](http://en.wikipedia.org/wiki/Dd_%28Unix%29). Example 2.5G file:
+[dd](http://en.wikipedia.org/wiki/Dd_%28Unix%29), which is [POSIX](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/dd.html). Example 2.5G file:
 
     $ time rarara big.file 0 2459650481
     real    0m13.803s
