@@ -28,6 +28,25 @@ Alternatives
     $ time dd if=big.file of=/dev/null bs=4096 count=600501 skip=0
     real    0m14.394s
 
+7.4 GB file:
+
+    $ time dd if=/media/mtc/Ether/siskin-data/000/SAMerged/date-2014-03-04-kind-tit.mrc of=/dev/null bs=64k
+    113123+1 records in
+    113123+1 records out
+    7413691873 bytes (7.4 GB) copied, 43.7198 s, 170 MB/s
+
+    real	0m43.778s
+    user	0m0.028s
+    sys	0m3.672s
+
+    $ time rarara /media/mtc/Ether/siskin-data/000/SAMerged/date-2014-03-04-kind-tit.mrc
+    readahead [0:7413691873]
+
+    real	0m23.753s
+    user	0m0.004s
+    sys	0m0.464s
+
+
 See also
 --------
 
