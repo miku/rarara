@@ -8,7 +8,9 @@ Usage
 
     $ rarara FILENAME [OFFSET [COUNT]]
 
-Defaults: `OFFSET=0, COUNT=1073741824`.
+Cache at most 1G starting at the beginning of the file by default:
+
+    $ rarara FILENAME 0 1073741824
 
 See also
 --------
