@@ -19,6 +19,17 @@ Cache at most 1G starting at the beginning of the file by default:
 
     $ rarara FILENAME 0 1073741824
 
+Alternatives
+------------
+
+Example 2.5G file:
+
+    $ time rarara big.file 0 2459650481
+    real    0m13.803s
+
+    $ time dd if=big.file of=/dev/null bs=4096 count=600501 skip=0
+    real    0m14.394s
+
 See also
 --------
 
