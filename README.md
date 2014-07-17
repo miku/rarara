@@ -1,7 +1,7 @@
 rarara
 ======
 
-Prime buffer cache for a file via readahead from the command line (linux only).
+Prime [buffer cache](http://www.tldp.org/LDP/sag/html/buffer-cache.html) for a file via [readahead](http://man7.org/linux/man-pages/man2/readahead.2.html) from the command line (linux only).
 
 Usage
 -----
