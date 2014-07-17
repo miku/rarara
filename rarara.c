@@ -1,5 +1,9 @@
+// Why?
 // http://unix.stackexchange.com/q/145034/376
 // http://www.reddit.com/r/linux/comments/2axv21/tiny_tool_to_prime_buffer_cache_for_a_file/
+//
+// How?
+// $ cc -Wall -o rarara rarara.c
 #define _GNU_SOURCE
 #include <fcntl.h>
 #include <stdio.h>
@@ -17,7 +21,7 @@ int main(int argc, char const *argv[])
             fprintf (stderr, "OFFSET must be an integer\n");
             return 1;
         }
-    }   
+    }
     if (argc == 4) {
         if (sscanf (argv[3], "%zu", &count) != 1) {
             fprintf (stderr, "COUNT must be an integer\n");
