@@ -13,13 +13,13 @@ int main(int argc, char const *argv[])
     off64_t offset = 0;
     if (argc == 3) {
         if (sscanf (argv[2], "%zu", &offset) != 1) {
-            fprintf (stderr, "OFFSET must be an integer");
+            fprintf (stderr, "OFFSET must be an integer\n");
             return 1;
         }
     }   
     if (argc == 4) {
         if (sscanf (argv[3], "%zu", &count) != 1) {
-            fprintf (stderr, "COUNT must be an integer");
+            fprintf (stderr, "COUNT must be an integer\n");
             return 1;
         }
     }
