@@ -22,7 +22,7 @@ Cache at most 1G starting at the beginning of the file by default:
 Alternatives
 ------------
 
-[Dd](http://en.wikipedia.org/wiki/Dd_%28Unix%29). Example 2.5G file:
+[dd](http://en.wikipedia.org/wiki/Dd_%28Unix%29). Example 2.5G file:
 
     $ time rarara big.file 0 2459650481
     real    0m13.803s
