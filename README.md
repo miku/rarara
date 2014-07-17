@@ -3,6 +3,13 @@ rarara
 
 Prime [buffer cache](http://www.tldp.org/LDP/sag/html/buffer-cache.html) for a file via [readahead](http://man7.org/linux/man-pages/man2/readahead.2.html) from the command line (linux only).
 
+> readahead() initiates readahead on a file so that subsequent reads
+  from that file will be satisfied from the cache, and not block on
+  disk I/O (assuming the readahead was initiated early enough and that
+  other activity on the system did not in the meantime flush pages from
+  the cache).
+
+
 Usage
 -----
 
