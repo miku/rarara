@@ -15,9 +15,7 @@ Usage
 
     $ rarara FILENAME [OFFSET [COUNT]]
 
-Cache at most 1G starting at the beginning of the file by default:
-
-    $ rarara FILENAME 0 1073741824
+Try to cache the whole file starting at the beginning by default.
 
 Alternatives
 ------------

@@ -7,6 +7,16 @@
 #define _GNU_SOURCE
 #include <fcntl.h>
 #include <stdio.h>
+#include <sys/stat.h>
+
+size_t fsize(const char *filename) {
+    struct stat st;
+
+    if (stat(filename, &st) == 0)
+        return st.st_size;
+
+    return -1;
+}
 
 int main(int argc, char const *argv[])
 {
@@ -14,7 +24,12 @@ int main(int argc, char const *argv[])
         fprintf(stderr, "Usage: %s FILENAME [OFFSET [COUNT]]\n", argv[0]);
         return 1;
     }
-    size_t count = 1073741824; // cache 1G from offset on by default
+    size_t count = fsize(argv[1]);
+    if (count == -1) {
+        fprintf (stderr, "could not determine file size\n");
+        return 1;
+    }
+    // size_t count = 1073741824; // cache 1G from offset on by default
     off64_t offset = 0;
     if (argc == 3) {
         if (sscanf (argv[2], "%zu", &offset) != 1) {
