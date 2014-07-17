@@ -30,7 +30,7 @@ Alternatives
 
 7.4 GB file:
 
-    $ time dd if=/media/mtc/Ether/siskin-data/000/SAMerged/date-2014-03-04-kind-tit.mrc of=/dev/null bs=64k
+    $ time dd if=bigger.file of=/dev/null bs=64k
     113123+1 records in
     113123+1 records out
     7413691873 bytes (7.4 GB) copied, 43.7198 s, 170 MB/s
@@ -39,7 +39,7 @@ Alternatives
     user	0m0.028s
     sys	0m3.672s
 
-    $ time rarara /media/mtc/Ether/siskin-data/000/SAMerged/date-2014-03-04-kind-tit.mrc
+    $ time rarara bigger.file
     readahead [0:7413691873]
 
     real	0m23.753s
