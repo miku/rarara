@@ -37,14 +37,14 @@ Alternatives
 
     real	0m43.778s
     user	0m0.028s
-    sys	0m3.672s
+    sys	  0m3.672s
 
     $ time rarara bigger.file
     readahead [0:7413691873]
 
     real	0m23.753s
     user	0m0.004s
-    sys	0m0.464s
+    sys	  0m0.464s
 
 
 See also
